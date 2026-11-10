@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Runtime logs are generated; keep the folder only
+logs/*
+!logs/.gitkeep
