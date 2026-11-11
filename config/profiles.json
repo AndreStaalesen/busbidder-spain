@@ -1,0 +1,64 @@
+{
+  "budget": {
+    "name": "Budget traveller",
+    "description": "Cost matters most, will accept a slower trip and a fixed ticket.",
+    "departure_window": "morning",
+    "weights": {
+      "price": 60,
+      "duration": 15,
+      "departure": 10,
+      "flexibility": 5,
+      "emissions": 10
+    },
+    "limits": {
+      "max_price_eur": 40
+    }
+  },
+  "business": {
+    "name": "Business traveller",
+    "description": "Needs a fast direct and changeable trip, price matters little.",
+    "departure_window": "morning",
+    "weights": {
+      "price": 10,
+      "duration": 40,
+      "departure": 25,
+      "flexibility": 25,
+      "emissions": 0
+    },
+    "limits": {
+      "max_transfers": 0,
+      "max_duration_minutes": 420,
+      "changeable_required": true
+    }
+  },
+  "flexible": {
+    "name": "Flexible tourist",
+    "description": "Plans may change so a refundable, changeable ticket is  prioritized.",
+    "departure_window": "afternoon",
+    "weights": {
+      "price": 25,
+      "duration": 15,
+      "departure": 10,
+      "flexibility": 40,
+      "emissions": 10
+    },
+    "limits": {
+      "refundable_required": true
+    }
+  },
+  "eco": {
+    "name": "Eco-conscious traveller",
+    "description": "Wants the lowest emissions, accepts at most one transfer.",
+    "departure_window": "morning",
+    "weights": {
+      "price": 20,
+      "duration": 15,
+      "departure": 10,
+      "flexibility": 10,
+      "emissions": 45
+    },
+    "limits": {
+      "max_transfers": 1
+    }
+  }
+}

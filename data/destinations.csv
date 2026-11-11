@@ -1,0 +1,16 @@
+code,name,distance_km,coastal
+BAR,Barcelona,620,true
+VAL,Valencia,355,true
+SEV,Seville,530,false
+MAL,Malaga,530,true
+GRA,Granada,420,false
+COR,Cordoba,400,false
+BIL,Bilbao,400,true
+SAN,San Sebastian,450,true
+ZAR,Zaragoza,315,false
+ALI,Alicante,420,true
+MUR,Murcia,400,false
+SAL,Salamanca,215,false
+TOL,Toledo,72,false
+SDC,Santiago de Compostela,600,false
+CAD,Cadiz,650,true
