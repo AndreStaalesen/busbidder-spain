@@ -41,7 +41,7 @@ flowchart TB
     booking -. booking record .-> bookings
     cliOut -. saved ranking .-> outputs
 
-    SHARED["<b>Shared by all modules</b><br/>models.py: Offer, FareConditions, Booking<br/>exceptions.py: error hierarchy<br/>logging_setup.py: log configuration"]
+    SHARED["<b>Shared by all modules</b><br/>models.py: Company, Destination, Offer, FareConditions<br/>exceptions.py: error hierarchy<br/>logging_setup.py: log configuration"]
     booking ~~~ SHARED
 
     classDef file fill:#eeeeee,stroke:#666666,color:#000000

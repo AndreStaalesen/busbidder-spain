@@ -222,3 +222,7 @@ __marimo__/
 # Runtime logs are generated; keep the folder only
 logs/*
 !logs/.gitkeep
+
+
+# Bookings are created while the program runs; not committed
+bookings/
