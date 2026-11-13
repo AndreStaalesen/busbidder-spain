@@ -2,11 +2,24 @@
 classDiagram
     direction TB
 
-    class Constraint {
+        class Constraint {
         <<abstract>>
         +name
         +layer
+        +outcome
+        +is_active(request) bool
         +check(offer, request) bool
+        +describe(request) str
+    }
+    class MaximumConstraint {
+        <<abstract>>
+        +limit(request)
+        +value(offer)
+    }
+    class RequiredFeatureConstraint {
+        <<abstract>>
+        +required(request) bool
+        +has_feature(offer) bool
     }
     class OfferFilter {
         +apply(offers, request) FilterResult
@@ -16,11 +29,13 @@ classDiagram
     Constraint <|-- DestinationConstraint
     Constraint <|-- TravelWindowConstraint
     Constraint <|-- SeatsAvailableConstraint
-    Constraint <|-- MaxBudgetConstraint
-    Constraint <|-- MaxTransfersConstraint
-    Constraint <|-- MaxDurationConstraint
-    Constraint <|-- ChangeableRequiredConstraint
-    Constraint <|-- RefundableRequiredConstraint
+    Constraint <|-- MaximumConstraint
+    Constraint <|-- RequiredFeatureConstraint
+    MaximumConstraint <|-- MaxBudgetConstraint
+    MaximumConstraint <|-- MaxTransfersConstraint
+    MaximumConstraint <|-- MaxDurationConstraint
+    RequiredFeatureConstraint <|-- ChangeableRequiredConstraint
+    RequiredFeatureConstraint <|-- RefundableRequiredConstraint
 
     class Criterion {
         <<abstract>>
