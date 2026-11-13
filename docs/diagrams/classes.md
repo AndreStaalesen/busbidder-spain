@@ -31,6 +31,7 @@ classDiagram
         <<abstract>>
         +value(offer) float
         +score(offer, context) float
+        +score_missing(offer, context) float
     }
     class Ranker {
         +rank(offers, request) list
