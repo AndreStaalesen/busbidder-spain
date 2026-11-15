@@ -1,0 +1,41 @@
+Profile,Weight shifted,Shift (pp),Original #1,New #1,
+Budget traveller,price,-10,SOL-MAL-003,SOL-MAL-003,
+Budget traveller,price,+10,SOL-MAL-003,SOL-MAL-003,
+Budget traveller,duration,-10,SOL-MAL-003,SOL-MAL-003,
+Budget traveller,duration,+10,SOL-MAL-003,SOL-MAL-003,
+Budget traveller,emissions,-10,SOL-MAL-003,SOL-MAL-003,
+Budget traveller,emissions,+10,SOL-MAL-003,SOL-MAL-003,
+Budget traveller,departure,-10,SOL-MAL-003,SOL-MAL-003,
+Budget traveller,departure,+10,SOL-MAL-003,SOL-MAL-002,CHANGED
+Budget traveller,flexibility,-10,SOL-MAL-003,not possible,
+Budget traveller,flexibility,+10,SOL-MAL-003,COS-MAL-003,CHANGED
+Business traveller,price,-10,COS-MAL-003,CAM-MAL-001,CHANGED
+Business traveller,price,+10,COS-MAL-003,COS-MAL-003,
+Business traveller,duration,-10,COS-MAL-003,COS-MAL-003,
+Business traveller,duration,+10,COS-MAL-003,CAM-MAL-001,CHANGED
+Business traveller,emissions,-10,COS-MAL-003,not possible,
+Business traveller,emissions,+10,COS-MAL-003,COS-MAL-003,
+Business traveller,departure,-10,COS-MAL-003,COS-MAL-003,
+Business traveller,departure,+10,COS-MAL-003,COS-MAL-003,
+Business traveller,flexibility,-10,COS-MAL-003,COS-MAL-003,
+Business traveller,flexibility,+10,COS-MAL-003,COS-MAL-003,
+Flexible tourist,price,-10,VER-MAL-003,VER-MAL-003,
+Flexible tourist,price,+10,VER-MAL-003,VER-MAL-003,
+Flexible tourist,duration,-10,VER-MAL-003,VER-MAL-003,
+Flexible tourist,duration,+10,VER-MAL-003,VER-MAL-003,
+Flexible tourist,emissions,-10,VER-MAL-003,COS-MAL-003,CHANGED
+Flexible tourist,emissions,+10,VER-MAL-003,VER-MAL-003,
+Flexible tourist,departure,-10,VER-MAL-003,COS-MAL-003,CHANGED
+Flexible tourist,departure,+10,VER-MAL-003,VER-MAL-003,
+Flexible tourist,flexibility,-10,VER-MAL-003,VER-MAL-003,
+Flexible tourist,flexibility,+10,VER-MAL-003,VER-MAL-003,
+Eco-conscious traveller,price,-10,VER-MAL-002,VER-MAL-002,
+Eco-conscious traveller,price,+10,VER-MAL-002,VER-MAL-002,
+Eco-conscious traveller,duration,-10,VER-MAL-002,VER-MAL-002,
+Eco-conscious traveller,duration,+10,VER-MAL-002,VER-MAL-002,
+Eco-conscious traveller,emissions,-10,VER-MAL-002,VER-MAL-002,
+Eco-conscious traveller,emissions,+10,VER-MAL-002,VER-MAL-002,
+Eco-conscious traveller,departure,-10,VER-MAL-002,VER-MAL-003,CHANGED
+Eco-conscious traveller,departure,+10,VER-MAL-002,VER-MAL-002,
+Eco-conscious traveller,flexibility,-10,VER-MAL-002,VER-MAL-002,
+Eco-conscious traveller,flexibility,+10,VER-MAL-002,VER-MAL-002,

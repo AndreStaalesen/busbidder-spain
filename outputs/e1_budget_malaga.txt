@@ -1,0 +1,85 @@
+Request:  Madrid -> Malaga, 12 Jul 2027 to 14 Jul 2027
+Profile:  Budget traveller (budget)
+
+Hard constraints - offers that fail these are NOT ranked:
+  - destination Malaga
+  - departing 12 Jul 2027 to 14 Jul 2027
+  - at least one free seat
+  - price at most EUR 40.00
+Preferences - used only to rank the remaining offers:
+  price 60%, duration 15%, emissions 10%, departure 10% (morning), flexibility 5%
+
+Result:   15 matching offers; 1 sold out; 6 removed by your limits (6 price); 8 ranked
+
+Rankings reflect the preferences and weights you chose. The top offer is the best match for those preferences, not an objectively best offer.
+
+#1 SOL-MAL-003  SolRuta  Wed 14 Jul 13:00 -> 21:10  EUR 29.64  score 92.3/100
+    Scores: price 99  duration 81  emissions 92*  departure 83  flexibility 60
+    + Price EUR 29.64 (cheapest: EUR 29.49)
+    + Journey 8h 10m (fastest: 6h 35m)
+    + Departs 13:00, 1h 00m outside your morning window (06:00-12:00)
+    = Best match for your preferences, 1.8 points ahead of #2 SOL-MAL-002.
+    ! Emissions were not reported for this offer; the median of the other offers' emission scores was used, which may favour it.
+
+#2 SOL-MAL-002  SolRuta  Tue 13 Jul 09:00 -> 17:10  EUR 29.49  score 90.5/100
+    Scores: price 100  duration 81  emissions 84  departure 100  flexibility 0
+    + Cheapest offer (EUR 29.49)
+    + Journey 8h 10m (fastest: 6h 35m)
+    + Departs 09:00, inside your morning window (06:00-12:00)
+    - Ticket can be neither changed nor refunded
+    = 1.8 points behind #1 SOL-MAL-003, mainly because of ticket flexibility (3.0 points).
+
+#3 SOL-MAL-001  SolRuta  Mon 12 Jul 12:00 -> 20:20  EUR 32.07  score 89.2/100
+    Scores: price 92  duration 79  emissions 92*  departure 100  flexibility 60
+    + Price EUR 32.07 (cheapest: EUR 29.49)
+    + Departs 12:00, inside your morning window (06:00-12:00)
+    = 3.1 points behind #1 SOL-MAL-003, mainly because of price (4.5 points).
+    ! Emissions were not reported for this offer; the median of the other offers' emission scores was used, which may favour it.
+    ! 1 transfer on the way.
+
+#4 COS-MAL-003  CostaLink  Wed 14 Jul 09:30 -> 16:10  EUR 36.35  score 88.2/100
+    Scores: price 81  duration 99  emissions 97  departure 100  flexibility 100
+    + Price EUR 36.35 (cheapest: EUR 29.49)
+    + Journey 6h 40m (fastest: 6h 35m)
+    + Departs 09:30, inside your morning window (06:00-12:00)
+    = 4.1 points behind #1 SOL-MAL-003, mainly because of price (11.0 points).
+
+#5 NOC-MAL-003  NocheVia  Wed 14 Jul 22:00 -> 07:35 (+1 day)  EUR 36.13  score 72.3/100
+    Scores: price 82  duration 69  emissions 100  departure 0  flexibility 60
+    + Price EUR 36.13 (cheapest: EUR 29.49)
+    + Lowest emissions (15.1 kg CO2)
+    - Departs 22:00, 8h 00m outside your morning window (06:00-12:00)
+    = 20.0 points behind #1 SOL-MAL-003, mainly because of price (10.7 points).
+    ! 1 transfer on the way.
+
+#6 NOC-MAL-002  NocheVia  Tue 13 Jul 21:15 -> 06:45 (+1 day)  EUR 35.56  score 72.2/100
+    Scores: price 83  duration 69  emissions 90  departure 0  flexibility 60
+    + Price EUR 35.56 (cheapest: EUR 29.49)
+    + Emissions 16.7 kg CO2 (lowest: 15.1 kg)
+    - Departs 21:15, 8h 45m outside your morning window (06:00-12:00)
+    = 20.1 points behind #1 SOL-MAL-003, mainly because of price (9.9 points).
+    ! 1 transfer on the way.
+
+#7 COS-MAL-002  CostaLink  Tue 13 Jul 18:00 -> 00:35 (+1 day)  EUR 39.56  score 71.4/100
+    Scores: price 75  duration 100  emissions 86  departure 0  flexibility 60
+    + Fastest journey (6h 35m)
+    + Emissions 17.5 kg CO2 (lowest: 15.1 kg)
+    - Departs 18:00, 6h 00m outside your morning window (06:00-12:00)
+    = 20.9 points behind #1 SOL-MAL-003, mainly because of price (15.0 points).
+
+#8 NOC-MAL-001  NocheVia  Mon 12 Jul 23:15 -> 09:05 (+1 day)  EUR 38.42  score 68.4/100
+    Scores: price 77  duration 67  emissions 93  departure 0  flexibility 60
+    + Emissions 16.2 kg CO2 (lowest: 15.1 kg)
+    - Departs 23:15, 6h 45m outside your morning window (06:00-12:00)
+    = 23.9 points behind #1 SOL-MAL-003, mainly because of price (13.6 points).
+    ! 1 transfer on the way.
+
+* estimated score (value not reported)
+
+Removed by your limits:
+  CAM-MAL-001  Camino Express  price EUR 57.06 is over the limit of EUR 40.00
+  CAM-MAL-002  Camino Express  price EUR 49.49 is over the limit of EUR 40.00
+  CAM-MAL-003  Camino Express  price EUR 47.96 is over the limit of EUR 40.00
+  VER-MAL-001  VerdeBus        price EUR 48.35 is over the limit of EUR 40.00
+  VER-MAL-002  VerdeBus        price EUR 45.30 is over the limit of EUR 40.00
+  VER-MAL-003  VerdeBus        price EUR 43.79 is over the limit of EUR 40.00

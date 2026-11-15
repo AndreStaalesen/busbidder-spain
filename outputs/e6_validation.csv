@@ -1,0 +1,19 @@
+Outcome,Line,Record,Reason
+Rejected,227,SOL-COR-901,price_eur is missing
+Rejected,228,SOL-COR-902,"price_eur must be greater than 0, got -12.00"
+Rejected,229,SOL-COR-903,"price_eur must be greater than 0, got 0.00"
+Rejected,230,SOL-COR-904,unknown destination 'Paris'
+Rejected,231,XYZ-COR-905,unknown company 'XYZ'
+Rejected,232,SOL-COR-906,arrival 2027-07-13 07:00 is not after departure 2027-07-13 09:00
+Rejected,233,SOL-COR-907,arrival 2027-07-13 09:00 is not after departure 2027-07-13 09:00
+Rejected,234,SOL-COR-908,departure '2027-07-32T09:00' is not a valid date and time (YYYY-MM-DDTHH:MM)
+Rejected,235,sol-cor-1,offer_id 'sol-cor-1' does not match the format AAA-AAA-000
+Rejected,236,CAM-COR-910,offer_id codes CAM-COR do not match company SOL and destination COR
+Rejected,237,CAM-BAR-001,"duplicate offer_id, first seen on line 47"
+Rejected,238,SOL-COR-912,"seats_available must be at least 0, got -3"
+Rejected,239,SOL-COR-913,"co2_kg must be greater than 0, got 0.0"
+Corrected,,SOL-COR-914,destination: ' cordoba ' corrected to 'Cordoba'
+Corrected,,SOL-COR-915,destination: 'Córdoba' corrected to 'Cordoba'
+Corrected,,SOL-COR-916,changeable: read 'Y' as true; refundable: read 'yes' as true
+Quarantined,243,SOL-COR-917,rating 7.5 is outside 1.0-5.0; it may use a different scale
+Quarantined,244,SOL-COR-918,price 120.00 is more than 3x the Cordoba median of 28.53

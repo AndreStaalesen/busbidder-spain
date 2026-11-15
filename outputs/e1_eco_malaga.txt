@@ -1,0 +1,127 @@
+Request:  Madrid -> Malaga, 12 Jul 2027 to 14 Jul 2027
+Profile:  Eco-conscious traveller (eco)
+
+Hard constraints - offers that fail these are NOT ranked:
+  - destination Malaga
+  - departing 12 Jul 2027 to 14 Jul 2027
+  - at least one free seat
+  - transfers at most 1
+Preferences - used only to rank the remaining offers:
+  price 20%, duration 15%, emissions 45%, departure 10% (morning), flexibility 10%
+
+Result:   15 matching offers; 1 sold out; 14 ranked
+
+Rankings reflect the preferences and weights you chose. The top offer is the best match for those preferences, not an objectively best offer.
+
+#1 VER-MAL-002  VerdeBus  Tue 13 Jul 07:30 -> 14:50  EUR 45.30  score 88.6/100
+    Scores: price 65  duration 82  emissions 96  departure 100  flexibility 100
+    + Emissions 7.8 kg CO2 (lowest: 7.5 kg)
+    + Journey 7h 20m (fastest: 6h 00m)
+    + Departs 07:30, inside your morning window (06:00-12:00)
+    = Best match for your preferences, 4.2 points ahead of #2 VER-MAL-001.
+    ! Only 4 seats left.
+
+#2 VER-MAL-001  VerdeBus  Mon 12 Jul 07:15 -> 14:45  EUR 48.35  score 84.4/100
+    Scores: price 61  duration 80  emissions 89  departure 100  flexibility 100
+    + Emissions 8.4 kg CO2 (lowest: 7.5 kg)
+    + Journey 7h 30m (fastest: 6h 00m)
+    + Departs 07:15, inside your morning window (06:00-12:00)
+    = 4.2 points behind #1 VER-MAL-002, mainly because of emissions (3.1 points).
+    ! 1 transfer on the way.
+
+#3 VER-MAL-003  VerdeBus  Wed 14 Jul 17:00 -> 00:45 (+1 day)  EUR 43.79  score 81.8/100
+    Scores: price 67  duration 77  emissions 100  departure 17  flexibility 100
+    + Lowest emissions (7.5 kg CO2)
+    + Ticket can be changed and refunded
+    - Departs 17:00, 5h 00m outside your morning window (06:00-12:00)
+    = 6.8 points behind #1 VER-MAL-002, mainly because of departure time (8.3 points).
+    ! 1 transfer on the way.
+
+#4 COS-MAL-003  CostaLink  Wed 14 Jul 09:30 -> 16:10  EUR 36.35  score 71.5/100
+    Scores: price 81  duration 90  emissions 48  departure 100  flexibility 100
+    + Price EUR 36.35 (cheapest: EUR 29.49)
+    + Journey 6h 40m (fastest: 6h 00m)
+    + Departs 09:30, inside your morning window (06:00-12:00)
+    - Emissions 15.5 kg CO2 (lowest: 7.5 kg)
+    = 17.1 points behind #1 VER-MAL-002, mainly because of emissions (21.5 points).
+
+#5 SOL-MAL-003  SolRuta  Wed 14 Jul 13:00 -> 21:10  EUR 29.64  score 66.6/100
+    Scores: price 99  duration 73  emissions 47*  departure 83  flexibility 60
+    + Price EUR 29.64 (cheapest: EUR 29.49)
+    + Departs 13:00, 1h 00m outside your morning window (06:00-12:00)
+    = 22.0 points behind #1 VER-MAL-002, mainly because of emissions (22.0 points).
+    ! Emissions were not reported for this offer; the median of the other offers' emission scores was used, which may favour it.
+
+#6 SOL-MAL-001  SolRuta  Mon 12 Jul 12:00 -> 20:20  EUR 32.07  score 66.5/100
+    Scores: price 92  duration 72  emissions 47*  departure 100  flexibility 60
+    + Price EUR 32.07 (cheapest: EUR 29.49)
+    + Departs 12:00, inside your morning window (06:00-12:00)
+    = 22.1 points behind #1 VER-MAL-002, mainly because of emissions (22.0 points).
+    ! Emissions were not reported for this offer; the median of the other offers' emission scores was used, which may favour it.
+    ! 1 transfer on the way.
+
+#7 CAM-MAL-001  Camino Express  Mon 12 Jul 12:00 -> 18:05  EUR 57.06  score 64.8/100
+    Scores: price 52  duration 99  emissions 44  departure 100  flexibility 100
+    + Journey 6h 05m (fastest: 6h 00m)
+    + Departs 12:00, inside your morning window (06:00-12:00)
+    + Ticket can be changed and refunded
+    - Emissions 17.2 kg CO2 (lowest: 7.5 kg)
+    - Price EUR 57.06 (cheapest: EUR 29.49)
+    = 23.8 points behind #1 VER-MAL-002, mainly because of emissions (23.6 points).
+
+#8 CAM-MAL-003  Camino Express  Wed 14 Jul 07:00 -> 13:05  EUR 47.96  score 63.9/100
+    Scores: price 61  duration 99  emissions 46  departure 100  flexibility 60
+    + Journey 6h 05m (fastest: 6h 00m)
+    + Departs 07:00, inside your morning window (06:00-12:00)
+    - Emissions 16.2 kg CO2 (lowest: 7.5 kg)
+    = 24.6 points behind #1 VER-MAL-002, mainly because of emissions (22.4 points).
+
+#9 SOL-MAL-002  SolRuta  Tue 13 Jul 09:00 -> 17:10  EUR 29.49  score 59.9/100
+    Scores: price 100  duration 73  emissions 42  departure 100  flexibility 0
+    + Cheapest offer (EUR 29.49)
+    + Departs 09:00, inside your morning window (06:00-12:00)
+    - Emissions 17.9 kg CO2 (lowest: 7.5 kg)
+    - Ticket can be neither changed nor refunded
+    = 28.7 points behind #1 VER-MAL-002, mainly because of emissions (24.4 points).
+
+#10 CAM-MAL-002  Camino Express  Tue 13 Jul 19:00 -> 01:00 (+1 day)  EUR 49.49  score 58.8/100
+    Scores: price 60  duration 100  emissions 49  departure 0  flexibility 100
+    + Fastest journey (6h 00m)
+    + Ticket can be changed and refunded
+    - Emissions 15.4 kg CO2 (lowest: 7.5 kg)
+    - Departs 19:00, 7h 00m outside your morning window (06:00-12:00)
+    - Price EUR 49.49 (cheapest: EUR 29.49)
+    = 29.7 points behind #1 VER-MAL-002, mainly because of emissions (21.4 points).
+    ! Only 4 seats left.
+
+#11 NOC-MAL-003  NocheVia  Wed 14 Jul 22:00 -> 07:35 (+1 day)  EUR 36.13  score 54.1/100
+    Scores: price 82  duration 63  emissions 50  departure 0  flexibility 60
+    + Price EUR 36.13 (cheapest: EUR 29.49)
+    - Emissions 15.1 kg CO2 (lowest: 7.5 kg)
+    - Departs 22:00, 8h 00m outside your morning window (06:00-12:00)
+    = 34.5 points behind #1 VER-MAL-002, mainly because of emissions (20.9 points).
+    ! 1 transfer on the way.
+
+#12 COS-MAL-002  CostaLink  Tue 13 Jul 18:00 -> 00:35 (+1 day)  EUR 39.56  score 53.9/100
+    Scores: price 75  duration 91  emissions 43  departure 0  flexibility 60
+    + Journey 6h 35m (fastest: 6h 00m)
+    - Emissions 17.5 kg CO2 (lowest: 7.5 kg)
+    - Departs 18:00, 6h 00m outside your morning window (06:00-12:00)
+    = 34.7 points behind #1 VER-MAL-002, mainly because of emissions (24.0 points).
+
+#13 NOC-MAL-002  NocheVia  Tue 13 Jul 21:15 -> 06:45 (+1 day)  EUR 35.56  score 52.3/100
+    Scores: price 83  duration 63  emissions 45  departure 0  flexibility 60
+    + Price EUR 35.56 (cheapest: EUR 29.49)
+    - Emissions 16.7 kg CO2 (lowest: 7.5 kg)
+    - Departs 21:15, 8h 45m outside your morning window (06:00-12:00)
+    = 36.3 points behind #1 VER-MAL-002, mainly because of emissions (23.1 points).
+    ! 1 transfer on the way.
+
+#14 NOC-MAL-001  NocheVia  Mon 12 Jul 23:15 -> 09:05 (+1 day)  EUR 38.42  score 51.3/100
+    Scores: price 77  duration 61  emissions 46  departure 0  flexibility 60
+    - Emissions 16.2 kg CO2 (lowest: 7.5 kg)
+    - Departs 23:15, 6h 45m outside your morning window (06:00-12:00)
+    = 37.2 points behind #1 VER-MAL-002, mainly because of emissions (22.4 points).
+    ! 1 transfer on the way.
+
+* estimated score (value not reported)
