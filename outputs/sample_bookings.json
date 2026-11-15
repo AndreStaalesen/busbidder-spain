@@ -1,0 +1,19 @@
+[
+  {
+    "reference": "BB-CAM-XHZTG2",
+    "offer_id": "CAM-MAL-001",
+    "traveller_name": "Ana Garcia",
+    "company_name": "Camino Express",
+    "destination_name": "Malaga",
+    "departure": "2027-07-12T12:00",
+    "arrival": "2027-07-12T18:05",
+    "price_eur": 57.06,
+    "fare": {
+      "changeable": true,
+      "refundable": true,
+      "luggage_bags": 1
+    },
+    "booked_at": "2026-11-15T16:04:16",
+    "payment_status": "simulated - no payment taken"
+  }
+]

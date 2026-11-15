@@ -1,0 +1,103 @@
+python -m busbidder
+BusBidder Spain - bus offers from Madrid
+Data: 245 read, 230 loaded (3 corrected), 13 rejected, 2 quarantined (details in busbidder.log)
+
+1) Search and rank offers
+2) View a booking
+3) List traveller profiles
+q) Quit
+Choose: 1
+
+Destinations: Alicante, Barcelona, Bilbao, Cadiz, Cordoba, Granada, Malaga, Murcia, Salamanca, San Sebastian, Santiago de Compostela, Seville, Toledo, Valencia, Zaragoza
+Destination: Paris
+  Unknown destination 'Paris'. Destinations from Madrid: Alicante, Barcelona, Bilbao, Cadiz, Cordoba, Granada, Malaga, Murcia, Salamanca, San Sebastian, Santiago de Compostela, Seville, Toledo, Valencia, Zaragoza
+Destination: Malaga
+Earliest departure date (YYYY-MM-DD): 2027-07-12
+Latest departure date (Enter = same day): 2027-07-12
+
+Traveller profiles:
+  1) Budget traveller - Cost matters most, will accept a slower trip and a fixed ticket.
+  2) Business traveller - Needs a fast direct and changeable trip, price matters little.
+  3) Flexible tourist - Plans may change so a refundable, changeable ticket is  prioritized.
+  4) Eco-conscious traveller - Wants the lowest emissions, accepts at most one transfer.
+  c) Custom: set your own preferences
+Profile: 3
+
+Request:  Madrid -> Malaga, 12 Jul 2027 to 12 Jul 2027
+Profile:  Flexible tourist (flexible)
+
+Hard constraints - offers that fail these are NOT ranked:
+  - destination Malaga
+  - departing 12 Jul 2027 to 12 Jul 2027
+  - at least one free seat
+  - ticket must be refundable
+Preferences - used only to rank the remaining offers:
+  price 25%, duration 15%, emissions 10%, departure 10% (afternoon), flexibility 40%
+
+Result:   5 matching offers; 1 sold out; 2 removed by your limits (2 refundable); 2 ranked
+
+Rankings reflect the preferences and weights you chose. The top offer is the best match for those preferences, not an objectively best offer.
+
+#1 CAM-MAL-001  Camino Express  Mon 12 Jul 12:00 -> 18:05  EUR 57.06  score 91.1/100
+    Values: 6h 05m | direct | changeable: yes | refundable: yes | 1 bag | CO2 17.2 kg | rating 4.4/5 | 9 seats left
+    Scores: price 85  duration 100  emissions 49  departure 100  flexibility 100
+    + Ticket can be changed and refunded
+    + Price EUR 57.06 (cheapest: EUR 48.35)
+    + Fastest journey (6h 05m)
+    - Emissions 17.2 kg CO2 (lowest: 8.4 kg)
+    = Best match for your preferences, 1.8 points ahead of #2 VER-MAL-001.
+
+#2 VER-MAL-001  VerdeBus  Mon 12 Jul 07:15 -> 14:45  EUR 48.35  score 89.2/100
+    Values: 7h 30m | 1 transfer | changeable: yes | refundable: yes | 1 bag | CO2 8.4 kg | rating 3.9/5 | 27 seats left
+    Scores: price 100  duration 81  emissions 100  departure 21  flexibility 100
+    + Ticket can be changed and refunded
+    + Cheapest offer (EUR 48.35)
+    + Journey 7h 30m (fastest: 6h 05m)
+    - Departs 07:15, 4h 45m outside your afternoon window (12:00-18:00)
+    = 1.8 points behind #1 CAM-MAL-001, mainly because of departure time (7.9 points).
+    ! 1 transfer on the way.
+
+Removed by your limits:
+  SOL-MAL-001  SolRuta         ticket is not refundable
+  NOC-MAL-001  NocheVia        ticket is not refundable
+
+Enter a rank number to book that offer, or press Enter to go back: 1
+Traveller's full name (Enter = cancel): C-3PO
+  Name may only contain letters, single spaces, hyphens and apostrophes
+Traveller's full name (Enter = cancel): Ana Garcia
+
+Booking confirmed (simulated - no payment taken).
+Booking reference: BB-CAM-XHZTG2
+  Traveller:   Ana Garcia
+  Journey:     Madrid -> Malaga with Camino Express (CAM-MAL-001)
+  Departure:   Mon 12 Jul 2027 12:00
+  Arrival:     Mon 12 Jul 2027 18:05
+  Price:       EUR 57.06
+  Conditions:  changeable, refundable, 1 checked bag
+  Booked at:   2026-11-15 16:04:16
+  Payment:     simulated - no payment taken
+
+
+1) Search and rank offers
+2) View a booking
+3) List traveller profiles
+q) Quit
+Choose: 2
+Booking reference: BB-CAM-XHZTG2
+Booking reference: BB-CAM-XHZTG2
+  Traveller:   Ana Garcia
+  Journey:     Madrid -> Malaga with Camino Express (CAM-MAL-001)
+  Departure:   Mon 12 Jul 2027 12:00
+  Arrival:     Mon 12 Jul 2027 18:05
+  Price:       EUR 57.06
+  Conditions:  changeable, refundable, 1 checked bag
+  Booked at:   2026-11-15 16:04:16
+  Payment:     simulated - no payment taken
+
+
+1) Search and rank offers
+2) View a booking
+3) List traveller profiles
+q) Quit
+Choose: q
+Goodbye.
