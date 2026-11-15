@@ -12,7 +12,7 @@ from busbidder.criteria import CRITERIA, DEPARTURE_WINDOWS
 from busbidder.exceptions import BusBidderError, ConfigError
 from busbidder.explain import DISCLAIMER, Explainer, Explanation, plural
 from busbidder.logging_setup import close_logging, setup_logging
-from busbidder.models import Destination
+from busbidder.models import Destination, Offer
 from busbidder.profiles import (
     Limits,
     TravellerProfile,
@@ -81,6 +81,18 @@ def describe_weights(profile: TravellerProfile) -> str:
         parts.append(f"{name} {weight:g}%{extra}")
     return ", ".join(parts)
 
+def describe_values(offer: Offer) -> str:
+    fare = offer.fare
+    return " | ".join([
+        format_duration(offer.duration_minutes),
+        "direct" if offer.transfers == 0 else plural(offer.transfers, "transfer"),
+        f"changeable: {'yes' if fare.changeable else 'no'}",
+        f"refundable: {'yes' if fare.refundable else 'no'}",
+        plural(fare.luggage_bags, "bag"),
+        "CO2 not reported" if offer.co2_kg is None else f"CO2 {offer.co2_kg:.1f} kg",
+        f"rating {offer.rating:.1f}/5",
+        f"{plural(offer.seats_available, 'seat')} left",
+    ])
 
 def describe_limits(limits: Limits) -> str:
     parts = []
@@ -129,6 +141,7 @@ def render_search(result: SearchResult, top: int | None = None) -> str:
         shown = list(zip(result.ranked, result.explanations))[:top]
         for item, explanation in shown:
             lines.append(explanation.headline)
+            lines.append(f"    Values: {describe_values(item.offer)}")
             scores = "  ".join(
                 f"{s.name} {s.score:.0f}{'*' if s.estimated else ''}"
                 for s in item.scores.values() if s.weight > 0)

@@ -54,7 +54,14 @@ def test_output_shows_hard_constraints_and_preferences_separately(paths, capsys)
     assert "not an objectively best offer" in out
     assert "Removed by your limits:" in out
 
-
+def test_every_ranked_offer_shows_its_values_scores_and_total(paths, capsys):
+    main(["--profile", "budget", *MALAGA_ARGS], paths=paths)
+    out = capsys.readouterr().out
+    assert out.count("/100\n    Values: ") == out.count("    Scores: ") == 8
+    assert ("#3 SOL-MAL-001  SolRuta  Mon 12 Jul 12:00 -> 20:20  EUR 32.07  score 89.2/100\n"
+            "    Values: 8h 20m | 1 transfer | changeable: yes | refundable: no | 1 bag | "
+            "CO2 not reported | rating 3.7/5 | 10 seats left") in out
+    
 def test_output_can_be_saved_to_a_file(paths, tmp_path, capsys):
     output = tmp_path / "results" / "budget.txt"
     main(["--profile", "budget", *MALAGA_ARGS, "--output", str(output)], paths=paths)
